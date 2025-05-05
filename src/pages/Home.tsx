@@ -20,6 +20,14 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 lg:py-48 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 mix-blend-multiply z-10"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1635840420799-f75477b0b977?q=80&w=1932&auto=format&fit=crop" 
+            alt="Tax professional working" 
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
@@ -38,7 +46,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent z-0"></div>
       </section>
 
       {/* Stats Section */}
@@ -172,11 +179,19 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* CTA Section with background image */}
+      <section className="relative section-padding text-white">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 mix-blend-multiply z-10"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" 
+            alt="Financial planning background" 
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Take Control of Your Finances?</h2>
-          <p className="text-xl mb-8 text-primary-foreground/80 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
             Schedule a consultation with Steven Dannenmann, CPA today and discover how we can help you achieve your financial goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

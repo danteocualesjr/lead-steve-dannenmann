@@ -12,7 +12,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
-        <style jsx global>{`
+        <style>{`
           .section-padding {
             padding-top: 4rem;
             padding-bottom: 4rem;
